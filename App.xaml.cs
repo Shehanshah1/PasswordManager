@@ -6,7 +6,9 @@
         {
             InitializeComponent();
 
-            App.Current.MainPage = new Views.NewUserView();
+            App.Current.MainPage = new Views.PasswordListView();
+            App.Current.MainPage = new NavigationPage(new Views.PasswordListView());
+
         }
     }
 }

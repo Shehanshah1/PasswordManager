@@ -4,13 +4,26 @@
              x:Class="PasswordManager.Views.LoginView"
              Title="LoginView"
              Shell.NavBarIsVisible="False">
+    <!--Program Author:  Muhammad Asjad Rehman Hashmi
+    USM ID: 10168158
+    Assignment: Password Manager
+    
+Description:
+        This prgoram is a Password Manager. This is a program that securely stores password information for login platforms.  
+    This also sometimes allow users to auto-generate random, secure passwords.   
+    In this project, we will design and implement a password manager program.
+-->
+    
     <VerticalStackLayout>
+       <!--Welcome Note-->
         <Label 
         Text="Welcome to Password Manager"
         VerticalOptions="Center" 
         HorizontalOptions="Center"
         FontSize="Header"
         Margin="20"/>
+        
+        <!--Entry and Sign in-->
         <Border
         BackgroundColor="#292929" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="500" >
             <VerticalStackLayout>
