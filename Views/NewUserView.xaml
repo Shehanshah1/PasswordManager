@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PasswordManager.Views.NewUserView"
+             Title="NewUserView"
+             Shell.NavBarIsVisible="False">
+    <ScrollView>
+        <VerticalStackLayout>
+        <Label 
+            Text="Welcome to Password Manager"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Header"
+            Margin="20"/>
+        <Border
+            BackgroundColor="#292929" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="500" >
+            <VerticalStackLayout>
+                <Label Text="Placeholder for error message" IsVisible="True" TextColor="Red" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                <Entry WidthRequest="200" Placeholder="First Name" HorizontalOptions="CenterAndExpand" Margin="5"/>
+                <Entry WidthRequest="200" Placeholder="Last Name" HorizontalOptions="CenterAndExpand" Margin="5"/>
+                <Border HeightRequest="2" WidthRequest="400" HorizontalOptions="CenterAndExpand" Margin="0,10"/>
+                <Entry WidthRequest="200" Placeholder="User Name" HorizontalOptions="CenterAndExpand" Margin="20"/>
+                <Entry WidthRequest="200" Placeholder="Password" HorizontalOptions="CenterAndExpand" Margin="0,5" IsPassword="True"/>
+                <Entry WidthRequest="200" Placeholder="Re-Enter Password" HorizontalOptions="CenterAndExpand" Margin="0,5" IsPassword="True"/>
+                <Button Text="Create Account" WidthRequest="200" Margin="0, 50,0,10" Clicked="OnCreateAccountButtonClicked"/>
+
+            </VerticalStackLayout>
+        </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
